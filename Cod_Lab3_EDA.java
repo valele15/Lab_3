@@ -1,4 +1,8 @@
-import java.util.*;
+//Nota el algoritmo de Counting sort decidimos colocarlo en ortro archivo, ya que, no era parte como tal del codigo
+// y solo se solicitaba para el analisis.
+
+import java.util.*;   //Valentina Mella ; 21862702-1
+                      //Valentina Díaz  ; 
 
 
 class Game{
