@@ -2,7 +2,7 @@
 // y solo se solicitaba para el analisis.
 
 import java.util.*;   //Valentina Mella ; 21862702-1
-                      //Valentina Díaz  ; 
+                      //Valentina Díaz  ; 21871793-4
 
 
 class Game{
