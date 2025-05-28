@@ -409,25 +409,33 @@ public class Main {
 
      ArrayList<Game> bubbleSortedByPrice = dataset.sortByAlgorithm("bubbleSort", "price");
      printFirstFiveGames(bubbleSortedByPrice);
+   
      System.out.println("\nInsertion Sort by Category:");
      ArrayList<Game> insertionSortedByCategory = dataset.sortByAlgorithm("insertionSort", "category");
      printFirstFiveGames(insertionSortedByCategory);
+   
      System.out.println("\nSelection Sort by Quality:");
      ArrayList<Game> selectionSortedByQuality = dataset.sortByAlgorithm("selectionSort", "quality");
      printFirstFiveGames(selectionSortedByQuality);
+   
      System.out.println("\nMerge Sort by Price:");
      ArrayList<Game> mergeSortedByPrice = dataset.sortByAlgorithm("mergeSort", "price");
      printFirstFiveGames(mergeSortedByPrice);
+   
      System.out.println("\nQuick Sort by Category:");
      ArrayList<Game> quickSortedByCategory = dataset.sortByAlgorithm("quickSort", "category");
      printFirstFiveGames(quickSortedByCategory);
+   
      System.out.println("\nDefault Sort by Quality:");
      ArrayList<Game> defaultSortedByQuality = dataset.sortByAlgorithm("default", "quality");
      printFirstFiveGames(defaultSortedByQuality);
+   
      System.out.println("\nTesting search methods:");
      dataset.sortByAlgorithm("quickSort", "price");
+   
      int priceToSearch = games.get(0).getPrice();
      System.out.println("\nGames with price " + priceToSearch + ":");
+   
   for(Game game : dataset.getGamesByPrice(priceToSearch)) {
          System.out.println(game);
      }
@@ -458,3 +466,4 @@ public class Main {
      for(int i=0;i<Math.min(5,games.size());++i){
          System.out.println(games.get(i));}
  }
+}
